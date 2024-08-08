@@ -213,9 +213,10 @@ var ajaxHooker = function() {
                 a.profile.lang = "en-US";
                 a.profile.accepted_premium_modes_tnc=true;
                 a.profile.ip = "";
-                a.profile.location.city = "";
-                a.profile.location.countryCode = "US";
-                a.profile.location.postal = "";
+                // location data no longer required - edited: 8th Aug, 2024
+                //a.profile.location.city = "";
+                //a.profile.location.countryCode = "US";
+                //a.profile.location.postal = "";
                 a.profile.premium=true;
                 res.responseText=JSON.stringify("data" in json?(json.data=a,json):a);
                 console.log(res.responseText);
