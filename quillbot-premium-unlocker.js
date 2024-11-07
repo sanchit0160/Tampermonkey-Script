@@ -212,11 +212,11 @@ var ajaxHooker = function() {
                 const a="data" in json?json.data:json;
                 a.profile.lang = "en-US";
                 a.profile.accepted_premium_modes_tnc=true;
-                a.profile.ip = "";
+                a.profile.ip = "127.0.0.1";
                 // location data no longer required - edited: 8th Aug, 2024
-                //a.profile.location.city = "";
+                //a.profile.location.city = "New York";
                 //a.profile.location.countryCode = "US";
-                //a.profile.location.postal = "";
+                //a.profile.location.postal = "10019";
                 a.profile.premium=true;
                 res.responseText=JSON.stringify("data" in json?(json.data=a,json):a);
                 console.log(res.responseText);
